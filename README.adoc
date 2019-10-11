@@ -20,7 +20,7 @@ yarn add {repo}
 
 You defined one or more keys that you want to include from `config` or `data` file.
 
-In hexo or theme:
+In your post file front-matter use `include`:
 
 [source,yaml]
 ----
