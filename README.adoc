@@ -1,0 +1,55 @@
+= hexo-front-matter-include
+NexT team;
+:lib: hexo-front-matter-include
+:repo: theme-next/hexo-front-matter-include
+
+image:https://img.shields.io/npm/v/{lib}?style=flat-square[npm]
+image:https://img.shields.io/github/package-json/v/{repo}?style=flat-square[version]
+
+== Install
+
+[source,bash,subs="verbatim,attributes"]
+----
+# use npm tool
+npm i {repo}
+# or use yarn
+yarn add {repo}
+----
+
+== Use
+
+You defined one or more keys that you want to include from `config` or `data` file.
+
+In hexo or theme:
+
+[source,yaml]
+----
+---
+title: Some Word...
+include: post_overview
+# include: [post_overview, post_webfront, ....]
+---
+----
+
+And you should config your keys in `config` file. Like:
+
+[source,yaml]
+----
+post_overview:
+  categories: [overview]
+  tags: [overview]
+  comments: false
+  toc_number: false
+  ...
+----
+
+Or write in `post_overview` data file (`source/_data/post_overview.yml`).
+
+[source,yaml]
+----
+categories: [overview]
+tags: [overview]
+comments: false
+toc_number: false
+...
+----
